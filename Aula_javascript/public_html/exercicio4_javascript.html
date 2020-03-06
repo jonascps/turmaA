@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+crie programa que valide login e senha ao digitar login admin, senha admin
+-->
+<html>
+    <head>
+        <title>Validando Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form id="logar">
+        <div align="center">
+        <div>Validando Login Digite admin para login e 1234 para senha</div>
+        <label>Login:</label>
+        <input id="login" name="login" type="text"/><br/>
+        <label>Senha:</label>
+        <input id="senha" name="senha" type="text"/ ><br/>
+        <input  onclick="enviar()" type="submit" value="Enviar"/>   
+        <script type="text/javascript">
+            function enviar(){
+                var vali_login = document.getElementById("login").value;
+                var vali_senha = document.getElementById("senha").value;
+                if ((vali_login==="admin") && (vali_senha=== "1234")){
+                    document.write("Você digitou corretamente");
+                }
+                else{
+                document.write("Você digitou não digitou corretamete");
+            }
+        }
+            </script>
+        </div>
+        </form>
+    </body>
+</html>
